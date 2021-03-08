@@ -16,7 +16,19 @@ using namespace std;
     scanf("%lld", &a[i])
 #define assign(arr, x, n) loop(i, n) arr[i] = x
 #define v(x) vector<x>
-int main()
-{
 
+v(ll) moves = {1, 2, 3, 4, 5, 6};
+
+int main() {
+//   int mod = 1e9+7;
+  int n;
+  cin >> n;
+  vector<int> dp(n+1,0);
+  dp[0] = 1;
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= 6 && i-j >= 0; j++) {
+      (dp[i] += dp[i-j]) %= mod;
+    }
+  }
+  cout << dp[n] << endl;
 }
