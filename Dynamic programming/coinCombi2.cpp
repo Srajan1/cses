@@ -28,7 +28,7 @@ int main() {
   vector<vector<ll>> dp(n+1,vector<ll>(target+1,0));
   dp[0][0] = 1;
   loopf(i, 1, n) {
-    loop(j, target+1) {
+    loop(j, target+1) { 
       dp[i][j] = dp[i-1][j];
       ll left = j-x[i-1];
       if (left >= 0) {
