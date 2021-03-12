@@ -18,5 +18,5 @@ using namespace std;
 #define v(x) vector<x>
 int main()
 {
-
+ 
 }
