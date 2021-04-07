@@ -16,6 +16,9 @@ using namespace std;
     scanf("%lld", &a[i])
 #define assign(arr, x, n) loop(i, n) arr[i] = x
 #define v(x) vector<x>
+#define p(x,y) pair<x, y>
+
+
 int main()
 {
  
