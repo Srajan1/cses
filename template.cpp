@@ -18,7 +18,6 @@ using namespace std;
 #define v(x) vector<x>
 #define p(x,y) pair<x, y>
 
-
 int main()
 {
     
